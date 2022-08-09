@@ -1,5 +1,11 @@
+import Nav from './components/Nav';
+
 const App = () => {
-    return <div>App</div>;
+    return (
+        <div className="h-screen bg-bgBody">
+            <Nav />
+        </div>
+    );
 };
 
 export default App;
