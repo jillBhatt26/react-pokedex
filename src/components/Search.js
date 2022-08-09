@@ -13,12 +13,12 @@ const Search = () => {
     const handleFormSubmit = async event => {
         event.preventDefault();
 
-        if (!query || !query.length) {
+        if (!query || !query.trim().length) {
             return alert("Please enter a pokemon's name!");
         }
 
         try {
-            const pokemonData = await fetchPokemon(query);
+            const pokemonData = await fetchPokemon(query.trim().toLowerCase());
 
             if (pokemonData.success === false) {
                 return alert(pokemonData.message);

@@ -5,7 +5,7 @@ const baseURL = `https://pokeapi.co/api/v2/pokemon`;
 const fetchPokemon = async query => {
     try {
         const fetchRes = await axios({
-            url: `${baseURL}/${query.toLowerCase()}`
+            url: `${baseURL}/${query}`
         });
 
         return fetchRes.data;
