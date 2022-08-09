@@ -5,7 +5,9 @@ module.exports = {
         extend: {
             colors: {
                 bgNav: '#2f3542',
-                bgBody: '#dfe6e9'
+                bgBody: '#dfe6e9',
+                bgFormBtnSubmit: '#2ed573',
+                bgFormBtnClear: '#ff4757'
             }
         }
     },
